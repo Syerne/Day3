@@ -7,9 +7,8 @@ public class EmpWageComputation {
 
         int wagePerHour = 20, fullDay = 1, empWage = 0, empWorkingHours = 0, partTime =2, workingDayMonth=20;
 
-
-        int randomNum = (int) (Math.random() * 10 % 3);
-        System.out.println("RandomNumGenerate: " + randomNum);
+        for(int i = 1; i <= workingDayMonth; i++) {
+            int randomNum = (int) (Math.random() * 10 % 3);
 
         switch (randomNum){
             case 1:
@@ -25,7 +24,7 @@ public class EmpWageComputation {
                 empWorkingHours=0;
                 break;
         }
-
+}
 
         empWage = (wagePerHour * empWorkingHours * workingDayMonth);
         System.out.println("Employee Wages is: " + empWage);
