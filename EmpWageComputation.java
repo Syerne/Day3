@@ -5,7 +5,7 @@ public class EmpWageComputation {
     public static void main(String[] args) {
         System.out.println("welcome to employee wage computation program");
 
-        int wagePerHour = 20, fullDay = 1, empWage = 0, empWorkingHours = 0, partTime =2;
+        int wagePerHour = 20, fullDay = 1, empWage = 0, empWorkingHours = 0, partTime =2, workingDayMonth=20;
 
 
         int randomNum = (int) (Math.random() * 10 % 3);
@@ -27,7 +27,7 @@ public class EmpWageComputation {
         }
 
 
-        empWage = (wagePerHour * empWorkingHours);
+        empWage = (wagePerHour * empWorkingHours * workingDayMonth);
         System.out.println("Employee Wages is: " + empWage);
     }
 }
